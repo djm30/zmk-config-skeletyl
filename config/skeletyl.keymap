@@ -21,8 +21,8 @@
 #define HYPR &kp(LG(LS(LALT))) 
 #define MEH &kp LC(LS(LALT)) 
 
-#define HYPR_M(kc) &hm HYPR kc
-#define MEH_M(kc) &hm MEH kc
+#define HYPR_M(kc) &hm (LG(LS(LALT))) kc
+#define MEH_M(kc) &hm LC(LS(LALT)) kc
 
 
 &mt {
