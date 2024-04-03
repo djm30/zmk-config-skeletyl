@@ -77,14 +77,6 @@
             tapping-term-ms = <200>;
             bindings = <&sl SYM>, <&to SYM>;
           };
-         hm_l: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
          hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -156,7 +148,7 @@ label= "BASE"                              ;
 
                 &lt ADJ Q     &kp W          &kp F         &kp P        &kp B           &kp J       &kp L        &kp U         &kp Y          &lt ADJ SEMI
                 &hm_l LALT A  &hm_l LCTRL R  &hm_l LSHFT S &hm_l LGUI T &kp G           &kp M       &hm_r RGUI N &hm_r RSHFT E &hm_r RCTRL I  &hm_r RALT O
-                HYPR_M(Z)         &kp X          &kp C         &kp D        &kp V           &kp K       &kp H        &kp COMMA     &kp DOT    MEH_M(FSLH)   
+                HYPR_M(Z)     &kp X          &kp C         &kp D        &kp V           &kp K       &kp H        &kp COMMA     &kp DOT        MEH_M(FSLH)   
                                         &td_sym     &hl_l NAV SPACE   &kp RET     &kp LSHFT   &kp BSPC    &td_num
                         >;
                 };
