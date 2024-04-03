@@ -20,8 +20,9 @@
 #define MO_SL(layer) &mo_sl layer layer
 #define HYPR &kp(LG(LS(LALT))) 
 #define MEH &kp LC(LS(LALT)) 
-#define HYPR_M(kc) HYPR kc
-#define MEH_M(kc) MEH LC(LS(LALT)) kc
+
+#define HYPR_M(kc) &hm HYPR kc
+#define MEH_M(kc) &hm MEH kc
 
 
 &mt {
@@ -52,6 +53,17 @@
    */
   combos {
     compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <11 12>;
+            bindings = <&kp ESC>; 
+          };
+
+        combo_tab {
+            timeout-ms = <30>;
+            key-positions = <17 18>;
+            bindings = <&kp TAB>;
+        };
 
   };
 
@@ -77,6 +89,14 @@
             tapping-term-ms = <200>;
             bindings = <&sl SYM>, <&to SYM>;
           };
+         hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
          hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
