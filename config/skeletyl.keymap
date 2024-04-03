@@ -263,7 +263,6 @@ label= "ADJ"                               ;
                 &trans      &bt BT_PRV  &trans          &bootloader &trans          &trans          &trans        &trans          &trans          &trans              
                                         &to BASE      &to BASE      &to BASE        &to BASE      &to BASE      &to BASE      
                         >;
-      };
     };
   };
 };
