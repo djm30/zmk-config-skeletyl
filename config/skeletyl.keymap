@@ -67,14 +67,14 @@
          td_num: num_layer_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
             bindings = <&sl NUM>, <&to NUM>;
           };
 
          td_sym: sym_layer_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
             bindings = <&sl SYM>, <&to SYM>;
           };
          hm_l: homerow_mods {
