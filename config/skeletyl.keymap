@@ -18,10 +18,10 @@
 #define ADJ  4
 
 #define MO_SL(layer) &mo_sl layer layer
-#define HYPR &kp(LG(LS(LALT))) 
+#define HYPR &kp LC(LG(LS(LALT))) 
 #define MEH &kp LC(LS(LALT)) 
 
-#define HYPR_M(kc) &hm (LG(LS(LALT))) kc
+#define HYPR_M(kc) &hm LC(LG(LS(LALT))) kc
 #define MEH_M(kc) &hm LC(LS(LALT)) kc
 
 
